@@ -1,0 +1,30 @@
+.nav-bar{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  li {
+    list-style: none;
+  }
+
+  a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: $title-Blue;
+
+
+  }
+
+
+
+
+  
+
+}
+ 
+ 

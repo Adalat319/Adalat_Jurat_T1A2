@@ -1,0 +1,93 @@
+.about {
+  width: 90vw;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  
+  .about-info{
+    text-align: center;
+    h2 {
+        color: $title-Blue;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-style: bold;
+
+      }
+    p {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+  }
+  .about-me {
+    background-color: $primary-color;
+    border-radius: 2rem;
+    padding: 1rem;
+    
+    h3 {
+        text-align: center;
+        color: $title-Blue;
+        padding: 2rem;
+        font-size: 2rem;
+        font-weight: 400;
+        font-style: bold;
+     }
+
+        ul.star-list {
+          list-style-type: none;
+          padding-left: 0;
+      
+          li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: justify;
+      
+            &:before {
+              content: "★";
+              color: $line-orange;
+              position: absolute;
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+      
+    }
+    a {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        background-color: $line-orange;
+        color: $white-color;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 20px;
+        width: fit-content;
+      }
+  
+    
+      @media screen and (min-width: 768px) {
+        .about-info {
+          display: flex;
+          gap: 2rem;
+          align-items: center; /* Center vertically */
+        }
+      
+        .about-img {
+          flex: 1;
+        }
+      
+        .about-quote {
+          flex: 1;
+          display: flex; /* Enable flex properties for inner content */
+          flex-direction: column; /* Stack inner content vertically */
+          justify-content: center; /* Center vertically */
+        }
+      }
+  
+}

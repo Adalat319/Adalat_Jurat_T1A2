@@ -1,0 +1,63 @@
+.home {
+  width: 80vw;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+
+  .title {
+   color: $line-orange;
+   font-weight: bold;
+   font-size: 1rem;
+   margin-bottom: 1rem;
+   line-height: 1.5;
+   text-align: center;
+ }
+
+ .home-info {
+   
+     p {
+       font-weight: 100;
+       font-size: 12px;
+       margin-bottom: 1rem;
+       text-align: center;
+     }
+   }
+ .home-intro{
+     font-weight: 400;
+     font-size: 1rem;
+     line-height: 1.5rem;
+     text-align: justify;
+     background-color: $primary-color;
+     border-radius: 2rem;
+     padding: 1rem;
+     p {
+       margin-bottom: 1rem;
+
+   } 
+ } 
+ 
+
+ @media screen and (min-width: 768px) {
+   .home-container {
+     display: flex;
+     gap: 2rem;
+   }
+   .home-info {
+    flex: 1;
+  }
+
+  .home-intro {
+    flex: 1;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+  }
+
+  .home-intro p {
+    flex-grow: 1; /* Fill available vertical space */
+    padding: 1rem;
+    margin: 0;
+  }
+
+ }
+ 
+}

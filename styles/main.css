@@ -1,0 +1,425 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@keyframes shake {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+@keyframes slider {
+  from {
+    transform: translate(-100px);
+  }
+  to {
+    transform: none;
+  }
+}
+.logo img {
+  width: 48x;
+  height: 48px;
+  margin-left: 1.5rem;
+  animation-name: slider;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.home-info img {
+  width: 100%;
+}
+
+.footer-link img {
+  width: 48px;
+  height: 48px;
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.work-component img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-post img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.header {
+  background-color: rgba(173, 226, 255, 0.33);
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+.header h1 {
+  flex-grow: 1;
+  text-align: center;
+  color: #0097BD;
+  /* phone view style for the header */
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.nav-bar li {
+  list-style: none;
+}
+.nav-bar a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #0097BD;
+}
+
+.home {
+  width: 80vw;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+.home .title {
+  color: #D76700;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.home .home-info p {
+  font-weight: 100;
+  font-size: 12px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.home .home-intro {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  background-color: rgba(173, 226, 255, 0.33);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.home .home-intro p {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .home .home-container {
+    display: flex;
+    gap: 2rem;
+  }
+  .home .home-info {
+    flex: 1;
+  }
+  .home .home-intro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home .home-intro p {
+    flex-grow: 1; /* Fill available vertical space */
+    padding: 1rem;
+    margin: 0;
+  }
+}
+
+.footer {
+  background-color: rgba(173, 226, 255, 0.33);
+  padding: 1rem 0.5rem;
+  margin-top: 2rem;
+}
+.footer .footer-link {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+
+.about {
+  width: 90vw;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+.about .about-info {
+  text-align: center;
+}
+.about .about-info h2 {
+  color: #0097BD;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: bold;
+}
+.about .about-info p {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.about .about-me {
+  background-color: rgba(173, 226, 255, 0.33);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.about .about-me h3 {
+  text-align: center;
+  color: #0097BD;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: bold;
+}
+.about .about-me ul.star-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.about .about-me ul.star-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+}
+.about .about-me ul.star-list li:before {
+  content: "★";
+  color: #D76700;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.about a {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #D76700;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (min-width: 768px) {
+  .about .about-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center; /* Center vertically */
+  }
+  .about .about-img {
+    flex: 1;
+  }
+  .about .about-quote {
+    flex: 1;
+    display: flex; /* Enable flex properties for inner content */
+    flex-direction: column; /* Stack inner content vertically */
+    justify-content: center; /* Center vertically */
+  }
+}
+
+.work {
+  width: 90vw;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+.work h2 {
+  text-align: center;
+  color: #D76700;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.work .work-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work .work-component {
+  background-color: rgba(173, 226, 255, 0.33);
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.work .work-component h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #0097BD;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.work .work-component p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.work .work-component p.image-description {
+  font-style: thin;
+  font-size: 0.5rem;
+  text-align: center;
+}
+.work .work-component p a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .work .work-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .work .work-container .work-component {
+    max-width: 45%;
+  }
+}
+
+.blog {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+.blog h2 {
+  text-align: center;
+  color: #D76700;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.blog .blog-post {
+  background-color: rgba(173, 226, 255, 0.33);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.blog .blog-post h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #0097BD;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.blog .blog-post p {
+  font-style: italic;
+  font-size: 1rem;
+  text-align: center;
+}
+.blog .blog-post a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #0097BD;
+}
+@media screen and (min-width: 768px) {
+  .blog .blog-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .blog .blog-container .blog-post {
+    max-width: 45%;
+  }
+}
+
+.contact {
+  width: 90vw;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact h1 {
+  display: inline-block;
+  text-align: center;
+  background-color: #0097BD;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.contact .contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.contact .contact-content p {
+  background-color: rgba(173, 226, 255, 0.33);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  font-style: thin;
+  width: 100%;
+}
+.contact .contact-content input,
+.contact .contact-content textarea {
+  background-color: rgba(173, 226, 255, 0.33);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  font-style: thin;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.contact .contact-content button {
+  display: block;
+  text-align: center;
+  background-color: #0097BD;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .contact .contact-content {
+    justify-content: center;
+    display: flex;
+    flex-direction: row; /* Add flex-direction property */
+    align-items: flex-start; /* Add align-items property */
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .contact .my-info,
+  .contact .contact-form {
+    width: 45%; /* Adjust the width as needed */
+  }
+}/*# sourceMappingURL=main.css.map */

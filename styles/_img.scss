@@ -1,0 +1,43 @@
+.logo img {
+    width: 48x;
+    height: 48px;
+    margin-left: 1.5rem;
+    animation-name: slider;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+.home-info {
+     img {
+         width: 100%;
+        }
+
+  }
+
+  .footer-link img {
+    width: 48px;
+    height: 48px;
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .about-img{
+    img{
+      max-width: 100%;
+      border-radius: 2rem;
+      margin-bottom: 2rem;
+    }
+  } 
+
+  .work-component img {
+     width: 100%;
+     height: auto;
+      
+  }
+  .blog-post img {
+    width: 100%;
+    margin-bottom: 2rem;
+
+  }
+  

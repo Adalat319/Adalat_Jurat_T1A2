@@ -1,0 +1,86 @@
+.contact {
+    width: 90vw;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    h1 {
+      display: inline-block;
+      text-align: center;
+      background-color: $title-Blue;
+      border-radius: 20px;
+      color: $white-color;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+  
+    .contact-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  
+      p {
+        background-color: $primary-color;
+        border-radius: 20px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        font-size: 1rem;
+        font-style: thin;
+        width: 100%;
+       
+      }
+  
+      input,
+      textarea {
+        background-color: $primary-color;
+        border-radius: 20px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        font-size: 1rem;
+        font-style: thin;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        
+      }
+  
+      button {
+        display: block;
+        text-align: center;
+        background-color: $title-Blue;
+        border-radius: 20px;
+        color: $white-color;
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 0 auto;
+        padding: 1rem;
+        border: none;
+      }
+    }
+  
+    @media screen and (min-width: 768px) {
+      .contact-content {
+        justify-content: center;
+        display: flex;
+        flex-direction: row; /* Add flex-direction property */
+        align-items: flex-start; /* Add align-items property */
+       
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+  
+      .my-info,
+      .contact-form {
+        width: 45%; /* Adjust the width as needed */
+      }
+      
+  }
+}  

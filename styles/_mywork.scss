@@ -1,0 +1,73 @@
+.work {
+   width: 90vw;
+   margin: 0 auto;
+   font-family: 'Roboto', sans-serif;
+   
+    
+    h2 {
+      text-align: center;
+      color: $line-orange;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .work-container{
+      display: flex;
+      flex-wrap: wrap;
+  
+    }
+
+    .work-component {
+      background-color: $primary-color;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      padding: 2rem;
+    
+  
+  
+      h3 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: $title-Blue;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+  
+      p {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-align: justify;
+
+        &.image-description {
+            font-style: thin;
+            font-size: 0.5rem;
+            text-align: center;
+      }
+  
+      a {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+  
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .work-container {
+     justify-content: center;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     
+
+     .work-component{
+      max-width: 45%;
+     }
+
+  }
+}
+
+
+}

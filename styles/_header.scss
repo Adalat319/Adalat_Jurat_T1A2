@@ -1,0 +1,14 @@
+.header {
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.5rem;
+
+
+    h1 {
+        flex-grow: 1;
+        text-align: center;
+        color: $title-Blue;
+        /* phone view style for the header */
+    }  
+}
